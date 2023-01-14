@@ -23,11 +23,11 @@ soma(1, 1)
 imprime(soma())
 */
 
-//utilizando o return sem parametros
-function soma(n1, n2) {
+
+/*function soma(n1, n2) {
   return n1 + n2;
 
-}
+}*/
 //console.log(soma())
 
 
@@ -55,11 +55,85 @@ console.log(multiplica(soma(10, 10), soma(3, 4)))
 
 //DEFININDO UM PARÂMETRO PADRÃO NA MINHA VARIAVEL
 
-function multiplica(num1 = 1, num2 = 1) {
+/*function multiplica(num1 = 1, num2 = 1) {
   return num1 * num2
 }
 // ||||||||||||||||||||  (4)    |||     (3)   ||||
-console.log(multiplica(soma(2, 2), soma(2, 1)))
+console.log(multiplica(soma(2, 2), soma(2, 1)))*/
+
+
+// declaração de função
+
+/*function minhaFuncao(param) {
+  //bloco codigo
+}
+minhaFuncao("param")*/
+
+// expressão de função
+
+/*const somaTwo = function (num1, num2) { return num1 + num2 }
+console.log(somaTwo(1, 2))*/
+
+
+//diferença principal > hoisting
+// funções e var são "listadas" no topo do arquivo
+/*console.log(apresentar())
+//execeção
+function apresentar() {
+  return "olá"
+}
+
+console.log(somaTwo(2, 3))
+const somaTwo = function (num1, num2) { return num1 + num2 }
+*/
+// arrow functions >
+/*const somaNumeros = (num1, num2) => {
+  if (num1 > 10 || num2 > 10) {
+    return "somente numeros de 1 a 9"
+  } else {
+    return num1 + num2
+  }
+}
+console.log(somaNumeros(1, 2))*/
+
+
+// Callback Uma função callback é uma função passada a outra função como argumento, que é então invocado dentro da função externa para completar algum tipo de rotina ou ação.
+
+
+/*function Mostratexto(nome) {
+  console.log(nome)
+}*/
+
+/*function informacoes(callback) {
+  const nomet = "carlos"
+  callback(nomet)
+}
+*/
+
+// com numeros
+
+/*function Mostraresultado(resultado) {
+  console.log(resultado)
+}
+
+function soma(n1, n2, cb) {
+  const conta = n1 + n2;
+  cb(conta)
+
+}
+soma(2, 2, Mostraresultado)
+
+
+function multiplica(m1, m2, cb) {
+  const calculo = m1 * m2;
+  cb(calculo)
+}
+multiplica(3, 4, Mostraresultado)
+*/
+
+
+
+
 
 
 
